@@ -1,0 +1,75 @@
+@import url(reset.css);
+@import url(padrao.css);
+
+.pagina-login {
+    background-color: rgb(67, 75, 179);
+
+}
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-login{
+    background-color: rgb(67, 75, 179);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.form-login button{
+    margin-top: 20px;
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color:  rgb(171, 175, 230);
+}
+.form-login button:hover {
+    background-color: rgb(219, 221, 230);
+    color: black;
+}
+
+.campo-input {
+    width: 300px;
+    height: 50px;
+    position: relative;
+    margin: 2rem 0;
+}
+.campo-input input{
+    position: absolute;
+    inset: 0;
+    background-color: transparent;
+    padding: 0 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5rem;
+    color: black;
+}
+.campo-input label{
+    position: relative;
+    top: 30%;
+    left: 1rem;
+    transform: translateY(-30%);
+    color: rgb(75, 12, 12);
+    pointer-events: none;
+    padding: 0 .3rem;
+    background-color: rgb(67, 75, 179);
+    transition: 200ms ease-in-out top,
+                200ms ease-in-out font-size,
+                200ms ease-in-out font-color;
+
+}
+.campo-input input:focus + label,
+.campo-input input:valid + label{
+    top: -10px;
+    font-size: .8rem;
+    color: beige;
+
+}
